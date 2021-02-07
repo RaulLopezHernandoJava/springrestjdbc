@@ -1,4 +1,5 @@
-package com.tenomatic.proyectos.servicios;
+package com.tenomatic.proyectos.servicios.Producto;
+
 
 import com.tenomatic.proyectos.entidades.Producto;
 
@@ -9,4 +10,5 @@ public interface ProductoService {
 	void agregar(Producto producto);
 	Producto guardar(Producto producto);
 	void borrar(Long id);
+	
 }

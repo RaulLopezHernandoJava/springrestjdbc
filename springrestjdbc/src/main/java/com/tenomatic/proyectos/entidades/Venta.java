@@ -9,6 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Venta {
 
+	public Venta(Integer cantidad) {
+		this.cantidad = cantidad;
+	}
+	
 	private Long idVenta;
 	private Long idFactura;
 	private Long idProducto;

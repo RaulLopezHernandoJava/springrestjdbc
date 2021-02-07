@@ -11,6 +11,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Producto {
+	
+	public Producto(Long id, String descripcion,Integer precio, Long idProveedor, Long idCategoria) {
+		this.id=id;
+		this.descripcion=descripcion;
+		this.precio = precio;
+		this.idProveedor = idProveedor;
+		this.idCategoria=idCategoria;
+		
+	}
+	
 
 	private Long id;
 	@NotBlank
@@ -19,5 +29,10 @@ public class Producto {
 	private Integer precio;
 	private Long idProveedor;
 	private Long idCategoria;
+	private Venta venta;
+	private Proveedor proveedor;
+	
+	
 
+	
 }

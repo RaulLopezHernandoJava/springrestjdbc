@@ -2,6 +2,8 @@ package com.tenomatic.proyectos.repositorios;
 
 import org.springframework.stereotype.Controller;
 
+import com.tenomatic.proyectos.entidades.Producto;
+
 @Controller
 public interface Dao<T> {
 	
@@ -24,4 +26,5 @@ public interface Dao<T> {
 	default void borrar(Long id) {
 		throw new AccesoDatosException("NO IMPLEMENTADO");
 	};
+	
 }

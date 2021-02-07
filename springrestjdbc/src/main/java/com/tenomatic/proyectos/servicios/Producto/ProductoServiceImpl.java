@@ -1,4 +1,4 @@
-package com.tenomatic.proyectos.servicios;
+package com.tenomatic.proyectos.servicios.Producto;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,6 +14,7 @@ public class ProductoServiceImpl implements ProductoService {
 	
 	@Autowired
 	private Dao<Producto> dao;
+	
 	
 	@Override
 	public Iterable<Producto> listar() {
@@ -43,5 +44,5 @@ public class ProductoServiceImpl implements ProductoService {
 		dao.borrar(id);
 		
 	}
-
+	
 }
